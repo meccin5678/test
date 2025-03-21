@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
             { fileName: "item004", name: "映像制作" },
             { fileName: "item005", name: "ドローン撮影" },
             { fileName: "item006", name: "音源制作" },
-            { fileName: "item007", name: "商品プロデュース" },
-            { fileName: "item008", name: "ノベルティグッズ企画" },
-            { fileName: "item009", name: "パッケージデザイン" },
-            { fileName: "item010", name: "SNSマーケティング" },
-            { fileName: "item011", name: "インフルエンサーマネジメント" },
-            { fileName: "item012", name: "ディスプレイ広告" }
+            { fileName: "item007", name: "ディスプレイ広告" },
+            { fileName: "item008", name: "SNSマーケティング" },
+            { fileName: "item009", name: "インフルエンサーマネジメント" },
+            { fileName: "item010", name: "パッケージデザイン" },
+            { fileName: "item011", name: "ノベルティグッズ制作" },
+            { fileName: "item012", name: "商品プロデュース" }
         ];
 
         // 画像を動的に追加

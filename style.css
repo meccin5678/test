@@ -70,19 +70,19 @@ html {
 
 
 .page-title .page-title-wrapper .page-title-bg {
-  background: url(../img/title.jpg) no-repeat center center;
+  background: url(img/title.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 .page-title-company {
-  background: url(../img/company.jpg) no-repeat center center;
+  background: url(img/company.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 .page-title-product{
-  background: url(../img/product10.jpg) no-repeat center center;
+  background: url(img/product10.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;

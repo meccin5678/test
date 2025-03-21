@@ -24,27 +24,29 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "音源制作",
             comment: "メロディーや効果音などの制作" },
         {   fileName: "item007",
-            name: "商品プロデュース",
-            comment: "商品の企画・開発・販売" },
-        {   fileName: "item008",
-            name: "ノベルティグッズ企画",
-            comment: "ノベルティグッズの企画・制作" },
-        {   fileName: "item009",
-            name: "パッケージデザイン",
-            comment: "商品や包装のデザインの制作" },
-        {   fileName: "item010",
-            name: "SNSマーケティング",
-            comment: "SNSを活用した戦略的マーケティング" },
-        {   fileName: "item011",
-            name: "インフルエンサーマネジメント",
-            comment: "インフルエンサーとのタイアップで短期間で結果を出しています" },
-        {   fileName: "item012",
             name: "ディスプレイ広告",
             comment: "ディスプレイ広告の制作・運用" },
-    ];
+        {   fileName: "item008",
+            name: "SNSマーケティング",
+            comment: "SNSを活用した戦略的マーケティング" },
+        {   fileName: "item009",
+            name: "インフルエンサーマネジメント",
+            comment: "インフルエンサーとのタイアップで短期間で結果を出しています" },
 
-    // 表示する商品の数を設定
-    const displayCount = productList.dataset.imageCount ? parseInt(productList.dataset.imageCount) : products.length;
+        {   fileName: "item010",
+            name: "パッケージデザイン",
+            comment: "商品や包装のデザインの制作" },
+            
+        {   fileName: "item011",
+            name: "ノベルティグッズ企画",
+            comment: "ノベルティグッズの企画・制作" },
+        {   fileName: "item012",
+            name: "商品プロデュース",
+            comment: "商品の企画・開発・販売" },
+    ];
+                
+                // 表示する商品の数を設定
+                const displayCount = productList.dataset.imageCount ? parseInt(productList.dataset.imageCount) : products.length;
 
     // 指定された数の商品を表示
     products.slice(0, displayCount).forEach(product => {

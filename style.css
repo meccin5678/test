@@ -445,6 +445,8 @@ footer .footer-wrapper .footer-copy .small {
 }
 .section-product .product-btn-wrapper .product-btn {
   padding: 0.5rem 6em;
+  width: auto;
+  max-width: 100%;
   background-color: #070709;
   color: #ffffff;
   font-weight: bold;
@@ -473,10 +475,10 @@ footer .footer-wrapper .footer-copy .small {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 6rem;
   }
-  /* .section-product .product-btn-wrapper .product-btn {
-    padding: 0.5rem auto;
+  .section-product .product-btn-wrapper .product-btn {
+    font-size: .9rem;
     width: 100%;
-  } */
+  }
 }
 /* ---------------- 会社概要 ---------------- */
 .section-company {

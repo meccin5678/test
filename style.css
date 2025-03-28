@@ -60,15 +60,11 @@ html {
   width: 100vw;
   height: 40vh;
   position: relative;
-
 }
-
 .page-title .page-title-wrapper {
   width: 100%;
   height: 100%;
 }
-
-
 .page-title .page-title-wrapper .page-title-bg {
   background: url(img/title.jpg) no-repeat center center;
   background-size: cover;
@@ -92,7 +88,15 @@ html {
   bottom: -70px;
   left: calc((100vw - 1280px) / 2);
   animation: maru 10s linear infinite;
+  width: 140px;
+  height: 140px;
 }
+.page-title .page-title-wrapper .page-title-maru img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @keyframes maru {
   0% {
     transform: rotate(0);
@@ -105,24 +109,17 @@ html {
     transform: rotate(360deg);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .page-title .page-title-wrapper .page-title-maru {
     left: 5%;
   }
 }
-@media (max-width: 768px) {
-  .page-title .page-title-wrapper .page-title-maru {
-    left: 5%;
-  }
-}
-
 /* ---------------- ヘッダー ---------------- */
 header {
   width: 100vw;
   height: 100px;
   position: fixed;
   z-index: 10;
-
 }
 header .header-wrapper {
   width: 90%;
@@ -150,13 +147,15 @@ header .header-wrapper .hum {
   z-index: 20;
   background-color: rgb(7, 7, 9, .7);  
 }
-
 header .header-wrapper .hum span {
   display: block;
   width: 100%;
   height: 3.5px;
   background-color: #ffffff;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+header .header-wrapper .hum.active {
+  background-color: transparent;
 }
 header .header-wrapper .hum.active span:nth-child(1) {
   transform: rotate(45deg);
@@ -174,18 +173,33 @@ header .header-wrapper .hum.active span:nth-child(3) {
 header .nav-menu {
   opacity: 0;
   visibility: hidden;
-  width: 100vw;
-  transition: all 0.4s;
+  width: 50vw;
+  transition: all 0.3s;
   z-index: 10;
-  height: calc(40vh - 100px);
-  transform: translateX(100vw);
-  /* background: url(../img/color.png) no-repeat center center; */
-  background-color: rgb(7, 7, 9, .7);  
-
+  height: 40vh;
+  margin-top: -100px;
+  transform: translateY(-50vh);
+  transform: translateX(50vw);
+}
+/* ナビゲーションメニューが表示されるときのスタイル */
+header .nav-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+header .nav-menu.open ul li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 @media (max-width: 768px) {
   header .nav-menu {
     width: 100%;
+  }
+  header .nav-menu.open {
+    transform: translateX(0);
+  }
+  header .nav-menu.open ul li {
+    transform: translateX(0);
   }
 }
 header .nav-menu ul {
@@ -207,23 +221,20 @@ header .nav-menu ul li {
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   color: #ffffff;
+  background-color: rgb(7, 7, 9, .7);
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.8); */
- 
   border-bottom: .5px solid #ffffff;
   cursor: pointer;
-  transform: translateX(200%);
+  transform: translateY(-50vh);
   transition: transform 0.4s ease, opacity 0.3s ease; 
   z-index: 100;
 }
-
 header .nav-menu ul li a {
   display: flex;
   z-index: 100;
-
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -244,30 +255,6 @@ header .nav-menu ul li:nth-child(3) {
 header .nav-menu ul li:last-child {
   border-bottom: none;
 }
-
-/* ナビゲーションメニューが表示されるときのスタイル */
-header .nav-menu.open {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-}
-header .nav-menu.open ul li {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-
-}
-@media (max-width: 768px) {
-  header .nav-menu.open {
-    transform: translateX(0%);
-  }
-  header .nav-menu.open ul li {
-
-    transform: translateX(0%);
-  }
-
-}
-
 /* ---------------- フッター ---------------- */
 footer {
   margin: 0 auto;
@@ -370,7 +357,7 @@ footer .footer-wrapper .footer-copy .small {
 }
 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
-  height: 400px;
+  height: 320px;
   object-fit: cover;
 }
 .swiper .swiper-wrapper .swiper-slide {

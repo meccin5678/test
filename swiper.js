@@ -57,11 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 disableOnInteraction: false,
             },
             breakpoints: {
+                1480: {
+                    slidesPerView: 3, // 画面幅が1480ピクセル以上の場合
+                },
                 1280: {
-                    slidesPerView: 3, // 画面幅が768ピクセル以上の場合
+                    slidesPerView: 3, // 画面幅が1280ピクセル以上の場合
                 },
                 1024: {
-                    slidesPerView: 2, // 画面幅が768ピクセル以上の場合
+                    slidesPerView: 2, // 画面幅が1024ピクセル以上の場合
                 },
                 768: {
                     slidesPerView: 2, // 画面幅が768ピクセル以上の場合

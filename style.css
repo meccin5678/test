@@ -315,6 +315,12 @@ footer .footer-wrapper .footer-copy .small {
     left: 0;
   }
 }
+@media (max-width: 480px) {
+  .section-mission .mission-title::before {
+    font-size: 4rem;
+    left: 0;
+  }
+}
 .section-mission .mission-text {
   display: flex;
   flex-direction: column;
@@ -380,6 +386,11 @@ footer .footer-wrapper .footer-copy .small {
     height: 300px;
   }
 }
+@media (max-width: 480px) {
+  .swiper .swiper-wrapper .swiper-slide img {
+    height: 260px;
+  }
+}
 /* ---------------- プロダクトエリア ---------------- */
 .section-product {
   width: 80%;
@@ -403,6 +414,12 @@ footer .footer-wrapper .footer-copy .small {
 @media (max-width: 768px) {
   .section-product .product-title::before {
     font-size: 4.8rem;
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .section-product .product-title::before {
+    font-size: 4rem;
     left: 0;
   }
 }
@@ -444,7 +461,6 @@ footer .footer-wrapper .footer-copy .small {
   width: 100%;
   margin-top: 6rem;
   text-align: center;
-  background-color: aqua;
 }
 .section-product .product-btn-wrapper .product-btn {
   padding: 0.5rem 6em;
@@ -477,7 +493,6 @@ footer .footer-wrapper .footer-copy .small {
     font-size: 1rem;
     width: 100%;
     display: inline-block;
-
   }
 }
 /* ---------------- 会社概要 ---------------- */
@@ -537,6 +552,12 @@ footer .footer-wrapper .footer-copy .small {
 @media (max-width: 768px) {
   .section-company .company-title::before {
     font-size: 4.8rem;
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .section-company .company-title::before {
+    font-size: 4rem;
     left: 0;
   }
 }

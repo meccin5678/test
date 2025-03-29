@@ -93,6 +93,13 @@ html {
   width: 140px;
   height: 140px;
 }
+@media (max-width: 480px) {
+  .page-title .page-title-wrapper .page-title-maru {
+    bottom: -50px;
+    width: 100px;
+    height: 100px;
+  }
+}
 .page-title .page-title-wrapper .page-title-maru img {
   width: 100%;
   height: 100%;
